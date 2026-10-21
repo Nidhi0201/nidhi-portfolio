@@ -40,7 +40,7 @@ export const paragraphs: Paragraph[] = [
         text: "The method trains a dedicated vision model from scratch on patient X-rays.",
         false: true,
         truth:
-          "The research is reverse-engineering: an AI model generates an Impression from the Findings, a reconstruction model recovers the Findings from that Impression, and the two are compared. Nothing is trained from scratch on patient X-rays.",
+          "The research is reverse-engineering: a model generates Findings from an Impression, a reconstruction model recovers an Impression from those generated Findings, and the recovered Impression is compared against the original. Nothing is trained from scratch on patient X-rays. 19 paired examples evaluated so far.",
       },
       {
         text: "Her resume-reviewer agent catches planted hallucinations with full recall on a 30-case set.",

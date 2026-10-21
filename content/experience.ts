@@ -29,12 +29,12 @@ export const experience = [
 
 export const research = {
   title: "Hallucination detection in AI-generated radiology reports",
-  status: "research in progress",
+  status: "research in progress · 19 paired examples evaluated so far",
   advisor: "Dr. Lynne Grewe",
   summary:
-    "Investigating an output-to-input reverse-engineering approach to hallucination detection. An AI model generates an Impression from the original radiology Findings; a reconstruction model then attempts to recover the Findings from that generated Impression. Comparing the reconstructed Findings against the originals surfaces where the Impression invented, dropped, or distorted clinical information.",
+    "Investigating an output-to-input reverse-engineering approach to hallucination detection. An AI model generates radiology Findings from an original Impression. A reconstruction model then attempts to recover the Impression from those generated Findings, so the recovered Impression can be compared against the original — surfacing where the generated Findings invented, dropped, or distorted clinical information.",
   modality:
-    "The study compares single-modality (text-only) reconstruction with dual-modality (X-ray-assisted) reconstruction to investigate whether visual evidence improves hallucination detection. Comparison is ongoing.",
+    "The study compares single-modality (text-only) reconstruction with dual-modality (X-ray-assisted) reconstruction to investigate whether visual evidence improves hallucination detection. Comparison is ongoing; the current evaluation covers 19 paired examples.",
   note: "No real patient data appears on this site. Any examples below are clearly synthetic.",
 };
 

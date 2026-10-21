@@ -30,26 +30,25 @@ export function ResearchSection() {
               synthetic walk-through · not a real patient
             </p>
             <p>
-              <span className="opacity-70">① original findings:</span>{" "}
-              "Lung volumes are low. Patchy opacity in the right lower lobe,
-              most consistent with atelectasis. No pneumothorax."
+              <span className="opacity-70">① original impression:</span>{" "}
+              "Atelectasis in the right lower lobe. No pneumothorax."
             </p>
             <p className="mt-2">
-              <span className="opacity-70">② generated impression:</span>{" "}
+              <span className="opacity-70">② generated findings:</span>{" "}
               <span className="bg-[color:var(--dispatch)]/15 outline outline-1 outline-[color:var(--dispatch)] px-[2px]">
-                "Right-sided pneumothorax
+                "Left-sided pneumothorax
               </span>{" "}
-              with associated atelectasis in the lower lobe."
+              with lower-lobe atelectasis."
             </p>
             <p className="mt-2">
-              <span className="opacity-70">③ reconstructed findings:</span>{" "}
-              "Right-sided pneumothorax with lower-lobe atelectasis."
+              <span className="opacity-70">③ reconstructed impression:</span>{" "}
+              "Left pneumothorax with lower-lobe atelectasis."
             </p>
             <p className="mt-3 opacity-85">
               → Comparing ③ against ① surfaces the invented pneumothorax and
-              the laterality flip. In the dual-modality arm, the reconstructor
-              also sees the X-ray and can disagree with the Impression when the
-              image doesn't support it.
+              the laterality flip in ②. In the dual-modality arm, the
+              reconstructor also sees the X-ray and can disagree with the
+              generated Findings when the image doesn't support them.
             </p>
           </div>
           <p className="mt-4 text-[12px] opacity-70">{research.note}</p>

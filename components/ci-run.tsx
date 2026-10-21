@@ -53,9 +53,9 @@ const buildJobs = (): Job[] => [
     duration: "ongoing",
     logs: [
       `▶ ${research.title} · advisor ${research.advisor}`,
-      `✓ workflow: findings → generated impression → reconstructed findings`,
+      `✓ workflow: impression → generated findings → reconstructed impression`,
       `▶ comparing single-modality (text-only) vs dual-modality (+ x-ray) reconstruction`,
-      `… ongoing: whether visual evidence improves hallucination detection`,
+      `… ongoing · 19 paired examples evaluated so far`,
     ],
   },
   {
