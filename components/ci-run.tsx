@@ -53,9 +53,9 @@ const buildJobs = (): Job[] => [
     duration: "ongoing",
     logs: [
       `▶ ${research.title} · advisor ${research.advisor}`,
-      `✓ MIMIC-CXR v2.0.0 split 80/10/10 (credentialed access)`,
-      `✓ monitors: text-only vs text + xray · AUROC / AUPRC / RadGraph`,
-      `… injected errors: negation flips, laterality / severity, unsupported dx`,
+      `✓ workflow: findings → generated impression → reconstructed findings`,
+      `▶ comparing single-modality (text-only) vs dual-modality (+ x-ray) reconstruction`,
+      `… ongoing: whether visual evidence improves hallucination detection`,
     ],
   },
   {

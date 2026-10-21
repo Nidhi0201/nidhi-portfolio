@@ -29,8 +29,8 @@ export function Hero() {
             </p>
             <p className="text-[1.1rem] sm:text-[1.2rem] leading-relaxed max-w-prose2">
               {site.short} Right now I'm building <b>Sentinel</b>, a self-hosted
-              LLM gateway with built-in evals. On the side I research
-              hallucination monitoring in AI radiology reports.
+              LLM gateway with built-in evals. On the side I'm researching
+              hallucination detection in AI-generated radiology reports.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-[13px]">
               <Link

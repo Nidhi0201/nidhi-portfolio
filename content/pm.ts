@@ -5,7 +5,7 @@ export const pmHero = {
   kicker: "Issue 10 · the product desk",
   headline: "Ship it on purpose.",
   lede:
-    "I'm an engineer who ran a 200-person hackathon, raised $20,000 from 12 sponsors, and taught ~225 students at a national summit. I come to product the way I come to code: pick the sharpest problem, name the metric, cut the rest.",
+    "I'm an engineer who ran a 200-person hackathon, raised $20,000 from 12 sponsors, and co-led a workshop teaching ~225 students at a national summit. I come to product the way I come to code: pick the sharpest problem, name the metric, cut the rest.",
 };
 
 export const pmHighlights = [
@@ -21,8 +21,8 @@ export const pmHighlights = [
   },
   {
     value: "~225",
-    label: "students taught in one workshop",
-    note: "GMIS × CAHSI summit, Albuquerque. Co-designed the curriculum.",
+    label: "students reached in one workshop",
+    note: "GMIS × CAHSI summit, Albuquerque. Co-led the session with GDG.",
   },
   {
     value: "15",

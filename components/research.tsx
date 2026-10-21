@@ -22,26 +22,34 @@ export function ResearchSection() {
           <p className="mt-5 text-[15px] leading-relaxed max-w-prose2">
             {research.summary}
           </p>
+          <p className="mt-4 text-[15px] leading-relaxed max-w-prose2 opacity-90">
+            {research.modality}
+          </p>
           <div className="mt-6 border hairline p-5 text-[13px] leading-relaxed max-w-prose2 bg-[color:var(--rulesoft)]/20">
-            <p className="text-[11px] uppercase tracking-widest opacity-70 mb-2">
-              synthetic example · not a real patient
+            <p className="text-[11px] uppercase tracking-widest opacity-70 mb-3">
+              synthetic walk-through · not a real patient
             </p>
             <p>
-              <span className="opacity-70">findings:</span>{" "}
+              <span className="opacity-70">① original findings:</span>{" "}
               "Lung volumes are low. Patchy opacity in the right lower lobe,
               most consistent with atelectasis. No pneumothorax."
             </p>
             <p className="mt-2">
-              <span className="opacity-70">generated impression:</span>{" "}
+              <span className="opacity-70">② generated impression:</span>{" "}
               <span className="bg-[color:var(--dispatch)]/15 outline outline-1 outline-[color:var(--dispatch)] px-[2px]">
                 "Right-sided pneumothorax
               </span>{" "}
               with associated atelectasis in the lower lobe."
             </p>
-            <p className="mt-2 opacity-80">
-              → the monitor flags "pneumothorax" as unsupported and "right-sided"
-              as a laterality contradiction. AUROC on injected errors is what we
-              report.
+            <p className="mt-2">
+              <span className="opacity-70">③ reconstructed findings:</span>{" "}
+              "Right-sided pneumothorax with lower-lobe atelectasis."
+            </p>
+            <p className="mt-3 opacity-85">
+              → Comparing ③ against ① surfaces the invented pneumothorax and
+              the laterality flip. In the dual-modality arm, the reconstructor
+              also sees the X-ray and can disagree with the Impression when the
+              image doesn't support it.
             </p>
           </div>
           <p className="mt-4 text-[12px] opacity-70">{research.note}</p>

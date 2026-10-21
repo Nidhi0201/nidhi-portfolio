@@ -35,12 +35,12 @@ export const paragraphs: Paragraph[] = [
     id: "p2",
     title: "AI-generated bio · variant B",
     sentences: [
-      { text: "Nidhi's research with Dr. Lynne Grewe monitors hallucinations in AI radiology reports." },
+      { text: "Nidhi's research with Dr. Lynne Grewe investigates hallucination detection in AI-generated radiology reports." },
       {
-        text: "The study uses the MIMIC-CXR v3.0 release.",
+        text: "The method trains a dedicated vision model from scratch on patient X-rays.",
         false: true,
         truth:
-          "The research uses MIMIC-CXR v2.0.0 (credentialed access). There is no v3.0.",
+          "The research is reverse-engineering: an AI model generates an Impression from the Findings, a reconstruction model recovers the Findings from that Impression, and the two are compared. Nothing is trained from scratch on patient X-rays.",
       },
       {
         text: "Her resume-reviewer agent catches planted hallucinations with full recall on a 30-case set.",

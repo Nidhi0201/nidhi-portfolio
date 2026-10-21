@@ -6,7 +6,8 @@ export const experience = [
     bullets: [
       "Raised $20,000 from 12 sponsors.",
       "Led a 15-person team running a 200-person hackathon with 11 judges and 2 keynote speakers.",
-      "Taught a Google ADK workshop on agent memory and MCP.",
+      "Helped organize a Google ADK technical workshop and an AI venture-capital fireside chat.",
+      "Contributed to the development of the HackHayward website.",
     ],
   },
   {
@@ -27,11 +28,13 @@ export const experience = [
 ];
 
 export const research = {
-  title: "Hallucination Monitoring in AI-Generated Radiology Reports",
-  status: "in progress",
+  title: "Hallucination detection in AI-generated radiology reports",
+  status: "research in progress",
   advisor: "Dr. Lynne Grewe",
   summary:
-    "Generating radiology Impressions from Findings with Gemini on GCP using MIMIC-CXR v2.0.0 (credentialed access, 80/10/10 split). Comparing text-only vs text + X-ray monitors that flag hallucinated Impressions, scored by AUROC, AUPRC, and RadGraph on injected errors (negation flips, laterality/severity swaps, unsupported diagnoses).",
+    "Investigating an output-to-input reverse-engineering approach to hallucination detection. An AI model generates an Impression from the original radiology Findings; a reconstruction model then attempts to recover the Findings from that generated Impression. Comparing the reconstructed Findings against the originals surfaces where the Impression invented, dropped, or distorted clinical information.",
+  modality:
+    "The study compares single-modality (text-only) reconstruction with dual-modality (X-ray-assisted) reconstruction to investigate whether visual evidence improves hallucination detection. Comparison is ongoing.",
   note: "No real patient data appears on this site. Any examples below are clearly synthetic.",
 };
 

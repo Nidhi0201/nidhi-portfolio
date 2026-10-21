@@ -98,8 +98,9 @@ export function Community() {
             <h3 className="font-semibold">HackHayward (nonprofit)</h3>
             <p className="opacity-80 mt-2 leading-relaxed">
               President · 2024 — present. I lead a 15-person team running a
-              200-person hackathon. In 2025 I raised $20,000 from 12 sponsors
-              and taught a Google ADK workshop on agent memory and MCP.
+              200-person hackathon. In 2025 I raised $20,000 from 12 sponsors,
+              helped organize a Google ADK workshop and an AI venture-capital
+              fireside chat, and contributed to the HackHayward website.
             </p>
           </div>
           <div className="border hairline p-5">
