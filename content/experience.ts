@@ -37,7 +37,7 @@ export const research = {
     heading: "What's done",
     bullets: [
       "Processed 127,650 eligible report pairs from MIMIC-CXR.",
-      "Fine-tuned Gemini 2.5 Flash on the Impression → Findings task.",
+      "Fine-tuned Gemini 3.5 Flash on the Impression → Findings task.",
       "Evaluated on a 19-report test set vs. the un-tuned baseline.",
     ],
     metrics: [

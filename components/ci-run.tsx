@@ -54,7 +54,7 @@ const buildJobs = (): Job[] => [
     logs: [
       `▶ ${research.title} · advisor ${research.advisor}`,
       `✓ 127,650 MIMIC-CXR report pairs processed`,
-      `✓ fine-tuned gemini 2.5 flash · impression → findings`,
+      `✓ fine-tuned gemini 3.5 flash · impression → findings`,
       `✓ 19-report test set vs baseline · BLEU +134% · ROUGE-L +40% · METEOR +46% (preliminary)`,
       `▶ next: dual-modality (impression + x-ray) vs text-only`,
     ],
