@@ -53,9 +53,10 @@ const buildJobs = (): Job[] => [
     duration: "ongoing",
     logs: [
       `▶ ${research.title} · advisor ${research.advisor}`,
-      `✓ workflow: impression → generated findings → reconstructed impression`,
-      `▶ comparing single-modality (text-only) vs dual-modality (+ x-ray) reconstruction`,
-      `… ongoing · 19 paired examples evaluated so far`,
+      `✓ 127,650 MIMIC-CXR report pairs processed`,
+      `✓ fine-tuned gemini 2.5 flash · impression → findings`,
+      `✓ 19-report test set vs baseline · BLEU +134% · ROUGE-L +40% · METEOR +46% (preliminary)`,
+      `▶ next: dual-modality (impression + x-ray) vs text-only`,
     ],
   },
   {

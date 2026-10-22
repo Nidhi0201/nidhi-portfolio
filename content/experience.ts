@@ -28,14 +28,33 @@ export const experience = [
 ];
 
 export const research = {
-  title: "Hallucination detection in AI-generated radiology reports",
-  status: "research in progress · 19 paired examples evaluated so far",
+  title: "Generating radiology Findings from Impressions on MIMIC-CXR",
+  status: "research in progress · preliminary results",
   advisor: "Dr. Lynne Grewe",
   summary:
-    "Investigating an output-to-input reverse-engineering approach to hallucination detection. An AI model generates radiology Findings from an original Impression. A reconstruction model then attempts to recover the Impression from those generated Findings, so the recovered Impression can be compared against the original — surfacing where the generated Findings invented, dropped, or distorted clinical information.",
-  modality:
-    "The study compares single-modality (text-only) reconstruction with dual-modality (X-ray-assisted) reconstruction to investigate whether visual evidence improves hallucination detection. Comparison is ongoing; the current evaluation covers 19 paired examples.",
-  note: "No real patient data appears on this site. Any examples below are clearly synthetic.",
+    "Fine-tuning a model to generate the detailed radiology Findings for a chest X-ray given the radiologist's original Impression. The goal is a system that can draft clinically faithful Findings — the harder-to-write half of a report — from the shorter conclusion a radiologist already produced.",
+  done: {
+    heading: "What's done",
+    bullets: [
+      "Processed 127,650 eligible report pairs from MIMIC-CXR.",
+      "Fine-tuned Gemini 2.5 Flash on the Impression → Findings task.",
+      "Evaluated on a 19-report test set vs. the un-tuned baseline.",
+    ],
+    metrics: [
+      { label: "BLEU", delta: "+134%" },
+      { label: "ROUGE-L", delta: "+40%" },
+      { label: "METEOR", delta: "+46%" },
+    ],
+  },
+  next: {
+    heading: "What's planned",
+    bullets: [
+      "Give the model the original Impression and its chest X-ray image to generate Findings — dual-modality.",
+      "Compare dual-modality against the current text-only system to see whether the image improves clinical accuracy and reduces hallucinations.",
+      "Expand evaluation beyond the current 19-report test set.",
+    ],
+  },
+  note: "No real patient data appears on this site. Any example below is clearly synthetic. Metrics above are preliminary and from a small (19-report) test set.",
 };
 
 export const certifications = [

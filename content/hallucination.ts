@@ -40,7 +40,7 @@ export const paragraphs: Paragraph[] = [
         text: "The method trains a dedicated vision model from scratch on patient X-rays.",
         false: true,
         truth:
-          "The research is reverse-engineering: a model generates Findings from an Impression, a reconstruction model recovers an Impression from those generated Findings, and the recovered Impression is compared against the original. Nothing is trained from scratch on patient X-rays. 19 paired examples evaluated so far.",
+          "I fine-tuned Gemini 2.5 Flash on 127,650 MIMIC-CXR report pairs to generate Findings from an Impression — no vision model trained from scratch. Preliminary results on 19 test reports: BLEU +134%, ROUGE-L +40%, METEOR +46% vs the un-tuned baseline. Dual-modality (Impression + X-ray) is the planned next step.",
       },
       {
         text: "Her resume-reviewer agent catches planted hallucinations with full recall on a 30-case set.",
